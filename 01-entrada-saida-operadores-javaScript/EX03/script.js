@@ -13,4 +13,4 @@ let descontos = readLine.questionFloat("Digite os descontos: ");
 let salarioLiquido = salarioBruto + adicionalNoturno + (horasExtras * 5) - descontos;
 
 //saida no terminal
-console.log(`O salário liquido é ${salarioLiquido}`)
+console.log(`O salário liquido é R$${salarioLiquido.toFixed(2)}`);

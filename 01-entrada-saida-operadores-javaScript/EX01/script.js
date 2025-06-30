@@ -10,4 +10,4 @@ let novoSalario = salario + abono;
 
 
 //Saida no terminal
-console.log(`novo salario é : R$${novoSalario}`);
+console.log(`novo salario é : R$${novoSalario.toFixed(2)}`);
