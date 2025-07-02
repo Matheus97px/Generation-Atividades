@@ -11,7 +11,7 @@ console.log(`
 //declaracao variavel utilizando readLine
 let numeroEscolhido = readLine.questionInt(`Digite um numero: `);
 //declaracao da variavel atribuindo valor 0 para ela ser tipo number
-let soma = 0, media = 0, contador = 0;
+let soma = 0, contador = 0;
 
 //loop enquanto numeroEscolhido nao for igual a 0 
 do{
@@ -24,7 +24,7 @@ do{
     numeroEscolhido = readLine.questionInt(`Digite um numero: `);
 }while(numeroEscolhido !== 0);
 //calcula a media
-media = soma / contador
+const media = soma / contador
 
 //limpa o terminal
 console.clear();

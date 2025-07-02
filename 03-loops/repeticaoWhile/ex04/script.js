@@ -4,8 +4,9 @@
 const readLine = require("readline-sync");
 
 //declaraçao  das variaveis
-let pessoasBackend = 0, frontMulher = 0, frontHomem = 0, naoBinarioFull = 0, totalPesquisa = 0, media = 0, contador = 0;
+let pessoasBackend = 0, frontMulher = 0, frontHomem = 0, naoBinarioFull = 0, totalPesquisa = 0, contador = 0;
 
+//declaração e atribuição de valor para dar inicio ao loop
 let continuar = 's'
 
 
@@ -66,8 +67,9 @@ Pessoa Desenvolvedora (1-4)
     //armazena o total da idade
     contador += idade;
 }
+
 //calcula a media de todas as idades 
-media = contador / totalPesquisa;
+const media = contador / totalPesquisa;
 
 //limpa o terminal
 console.clear()
