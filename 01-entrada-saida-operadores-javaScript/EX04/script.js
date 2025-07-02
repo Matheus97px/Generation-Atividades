@@ -9,7 +9,7 @@ let numero3 = readLine.questionFloat("Digite o terceiro numero: ");
 let numero4 = readLine.questionFloat("Digite o quarto numero: ");
 
 //calculo
-let diferença = (numero1 * numero2) - (numero3 * numero4);
+const diferenca = (numero1 * numero2) - (numero3 * numero4);
 
 //saida no terminal
-console.log(`A diferença entre eles é ${diferença}`);
+console.log(`A diferença entre eles e ${diferenca}`);

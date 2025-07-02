@@ -8,10 +8,10 @@ let nota3 = readLine.questionFloat("Digite a terceira nota: ");
 let nota4 = readLine.questionFloat("Digite a quarta nota: ");
 
 //calculo 
-let media = (nota1 + nota2 + nota3 + nota4) / 4 ;
+const media = (nota1 + nota2 + nota3 + nota4) / 4;
 
 //Saida no terminal
-console.log(`A média final é ${media.toFixed(1)}`);
+console.log(`A media final é ${media.toFixed(1)}`);
 
 
 

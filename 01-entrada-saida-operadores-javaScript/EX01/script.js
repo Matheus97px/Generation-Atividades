@@ -2,11 +2,11 @@
 const readLine = require("readline-sync");
 
 //declaração das variaveis utilizando readline
-let salario = readLine.questionFloat("Digite o Salário: ");
+let salario = readLine.questionFloat("Digite o Salario: ");
 let abono = readLine.questionFloat("Digite o Abono: ");
 
 //calculo 
-let novoSalario = salario + abono;
+const novoSalario = salario + abono;
 
 
 //Saida no terminal
