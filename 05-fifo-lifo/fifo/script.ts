@@ -34,15 +34,35 @@ do {
     //caso 0 atribui o valor 'n' a variavel continuar  assim encerrado o loop
     switch (opcao) {
         case 1:
-            fila.enqueue(readLine.question(`Nome: `));
-            console.log(`\nFila de atendimento`);
-            fila.printQueue();
-            console.log(`\nCliente Adicionado!`);
-            console.log(`\nFila Tem ${fila.count()} Cliente(s)`);
+            let nome = readLine.question(`Digite o Nome do Cliente: `);
+            if (fila.contains(nome)) {
+                console.log(`Cliente ${nome} ja existe na fila \nDeseja adicionar outro?`);
+                let verificador = readLine.question(`Digite (s) ou (n): `).toLowerCase();
+                while (verificador !== 's' && verificador !== 'n') {
+                    console.clear();
+                    verificador = readLine.question(`Digite Uma Opcao Valida: (s)(n): `).toLowerCase();
+                }
+                if (verificador === 's') {
+                    fila.enqueue(nome);
+                    console.log(`\nFila de Atendimento`);
+                    fila.printQueue();
+                    console.log(`\nCliente ${nome} Adicionado a Fila!`);
+                    console.log(`\n Fila Tem ${fila.count()} Cliente(s)`);
+                } else {
+                    console.log(`Cliente ${nome} Nao Foi Adicionado a Fila`);
+                }
+
+            } else {
+                fila.enqueue(nome);
+                console.log(`\nFila de Atendimento`);
+                fila.printQueue();
+                console.log(`\nCliente ${nome} Adicionado a Fila!`);
+                console.log(`\n Fila Tem ${fila.count()} Cliente(s)`);
+            }
             break;
         case 2:
             if (fila.isEmpty() == false) {
-                console.log(`\nFila de atendimento`);
+                console.log(`\nFila de Atendimento`);
                 fila.printQueue();
                 console.log(`\nFila Tem ${fila.count()} Cliente(s)`);
             } else {
