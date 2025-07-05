@@ -1,4 +1,4 @@
-//script le numeros inteiros até que zero seja digitado ao final mostra a media de todos os numeros que são multiplos de 3
+//script le numeros inteiros até que zero seja digitado, ao final mostra a media de todos os numeros que são multiplos de 3
 
 //import do readline-sync
 const readLine = require("readline-sync");
@@ -6,7 +6,7 @@ const readLine = require("readline-sync");
 //exibi para o usuario o que fazer
 console.log(`
     Digite numeros para ver a media de todos numeros multiplos de 3.
-    Ao digitar 0 o programa encerra`);
+    Ao digitar 0 o programa encerra\n`);
 
 //declaracao variavel utilizando readLine
 let numeroEscolhido = readLine.questionInt(`Digite um numero: `);
@@ -15,7 +15,7 @@ let soma = 0, contador = 0;
 
 //loop enquanto numeroEscolhido nao for igual a 0 
 do{
-    //se numeroEscolhido for multiplo de tres ele incrementa na variavel soma
+    //se numeroEscolhido for multiplo de tres ele incrementa na variavel soma e aumenta em 1 o contador
     if(numeroEscolhido % 3 === 0){
      soma += numeroEscolhido;
      contador++;
@@ -23,7 +23,8 @@ do{
     //valida a condição do loop enquanto nao for 0 ele persiste
     numeroEscolhido = readLine.questionInt(`Digite um numero: `);
 }while(numeroEscolhido !== 0);
-//calcula a media
+
+//variavel recebe o calculo da media 
 const media = soma / contador
 
 //limpa o terminal

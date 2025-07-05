@@ -40,6 +40,6 @@ do {
     }
 } while (continuar === 's');
 
-    //mensagem de conclusao do script
-    console.clear();
-    console.log(`Até mais tarde`);
+//mensagem de conclusao do script
+console.clear();
+console.log(`Até mais tarde`);

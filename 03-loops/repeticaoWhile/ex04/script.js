@@ -3,7 +3,7 @@
 //import do readLine-sync
 const readLine = require("readline-sync");
 
-//declaraçao  das variaveis
+//declaraçao  das variaveis atribuidos valor 0 para serem do tipo number
 let pessoasBackend = 0, frontMulher = 0, frontHomem = 0, naoBinarioFull = 0, totalPesquisa = 0, contador = 0;
 
 //declaração e atribuição de valor para dar inicio ao loop
@@ -68,7 +68,7 @@ Pessoa Desenvolvedora (1-4)
     contador += idade;
 }
 
-//calcula a media de todas as idades 
+//variavel media recebe a a media de todas as idades 
 const media = contador / totalPesquisa;
 
 //limpa o terminal

@@ -3,13 +3,15 @@
 // import readline
 const readLine = require('readline-sync');
 
+
 //Exibi as opcoes de cargos 
+console.log(`Veja Seu Reajuste Salarial`);
 console.log(`\n\t Cargo \n1.Gerente\n2.Vendedor\n3.Supervisor\n4.Motorista\n5.Estoquista\n6.Tecnico de TI`);
 
 //declaracao das variaveis utilizando o readline-sync
-let nomeColaborador = readLine.question("Digite seu nome: ");
-let opcaoCargo = readLine.questionInt("\nDigite sua escolha (1-6):  ");
-let salario = readLine.questionFloat("Digite seu salario: ");
+const opcaoCargo = readLine.questionInt("\nDigite sua escolha (1-6):  ");
+const nomeColaborador = readLine.question("Digite seu nome: ");
+const salario = readLine.questionFloat("Digite seu salario: ");
 
 //declaracao do novoSalario undefined, para receber um valor dentro do switch case
 let novoSalario;

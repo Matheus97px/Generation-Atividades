@@ -4,10 +4,22 @@
 // import readline
 const readLine = require('readline-sync');
 
+//Exibe para o usuario o que o script faz
+console.log(`
+    _____________________________________________
+    |           Ola! Bem Vindo(a)!!             |
+    |                                           |
+    |       Digite Um Numero Para Verificar     |
+    |            Se é Par ou Impar              |
+    |           Positivo ou Negativo            |
+    |___________________________________________|
+`);
 
 //declaração de variaveis utilizando readline-sync
-let numeroEscolhido = readLine.questionInt("Digite um numero:  ");
+const numeroEscolhido = readLine.questionInt("Digite um numero:  ");
 
+//limpa o terminal
+console.clear();
 
 //verificação se é par, impar, negativo, positivo e retorna a saida no terminal
 if (numeroEscolhido % 2 === 0 && numeroEscolhido > 0) {
@@ -19,10 +31,6 @@ if (numeroEscolhido % 2 === 0 && numeroEscolhido > 0) {
 } else {
     console.log(`O numero escolhido: ${numeroEscolhido} é ímpar e negativo!!`);
 }
-
-
-
-
 
 
 

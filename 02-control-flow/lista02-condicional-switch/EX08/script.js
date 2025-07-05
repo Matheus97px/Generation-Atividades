@@ -4,13 +4,13 @@
 const readLine = require('readline-sync');
 
 //exibi as opcoes bancarias na tela 
-console.log(`Banco Generation\nEscolha a operacao desejada`);
+console.log(`Banco Generations\nEscolha a operacao desejada`);
 console.log(`\n\t Operacoes \n1.Saldo\n2.Saque\n3.Deposito`);
 
 //declaracao das variaveis
-let opcaoBancaria = readLine.questionInt("Digite a opcao bancaria (1-3): ");
+const opcaoBancaria = readLine.questionInt("Digite a opcao bancaria (1-3): ");
 let quantiaDigitada, novoSaldo;
-let saldoBancario = 1000.00;
+const saldoBancario = 1000.00;
 
 
 //baseado na escolha do switch case ira calcular e imprimir o novo saldo na tela 
@@ -25,10 +25,10 @@ switch (opcaoBancaria) {
         console.clear();
         switch (novoSaldo > 0) {
             case true:
-            console.log(`Operacao - Saque \nQuantia Sacada: R$${quantiaDigitada.toFixed(2)}\nSaldo: R$${novoSaldo.toFixed(2)}`);
+                console.log(`Operacao - Saque \nQuantia Sacada: R$${quantiaDigitada.toFixed(2)}\nSaldo: R$${novoSaldo.toFixed(2)}`);
                 break;
             default:
-            console.log(`Saldo Insuficiente`);
+                console.log(`Saldo Insuficiente`);
                 break;
         }
         break;
@@ -43,8 +43,6 @@ switch (opcaoBancaria) {
         console.log(`Operacao Invalida!!!`);
         break;
 }
-
-
 
 
 /* opcao utilizando operador ternario,esta comentado, porque nao sei se seria uma resposta valida

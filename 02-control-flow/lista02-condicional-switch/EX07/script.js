@@ -6,9 +6,11 @@ const readLine = require('readline-sync');
 //exibi na tela as operações da calculadora
 console.log(`Calculadora\nEscolha a operacao desejada`);
 console.log(`\n\t Operacoes \n1.Soma\n2.Subtracao\n3.Multiplicacao\n4.Divisao`);
-let operacao = readLine.questionInt("Escolha a opcao (1-4): ");
-let numero1 = readLine.questionFloat("Digite o primeiro numero: ");
-let numero2 = readLine.questionFloat("Digite o segundo numero: ");
+const operacao = readLine.questionInt("Escolha a opcao (1-4): ");
+const numero1 = readLine.questionFloat("Digite o primeiro numero: ");
+const numero2 = readLine.questionFloat("Digite o segundo numero: ");
+
+//declaracao do resultado undefined, para receber um valor dentro do switch case
 let resultado;
 
 //atribui valor na variavel resultado baseando na escolha do swith case e exibi na tela o resultado do calculo da calculadora

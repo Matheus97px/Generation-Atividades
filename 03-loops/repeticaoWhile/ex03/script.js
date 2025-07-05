@@ -10,10 +10,9 @@ Este é o verificador de idade
 Iremos verificar quem é maior de 50 anos e quem é menor de 21
 Ao digitar uma idade invalida(abaixo de 0) o programa encerra.`);
 
-
-
 //declaração das variaveis, com 0 atribuidas a ela para serem do tipo number 
 let menores = 0, maiores = 0;
+
 let idade = readLine.questionInt("Digite uma idade: ");
 
 

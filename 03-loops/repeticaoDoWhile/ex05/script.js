@@ -8,7 +8,7 @@ const readLine = require("readline-sync");
 //exibi para o usuario o que fazer
 console.log(`
     Digite numeros para ver a soma de todos numeros positivos.
-    Ao digitar 0 o programa encerra`);
+    Ao digitar 0 o programa encerra\n`);
 
 let numeroEscolhido = readLine.questionInt(`Digite um numero: `);
 //declaracao da variavel atribuindo valor 0 para ela ser tipo number
