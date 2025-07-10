@@ -6,7 +6,7 @@ Repositório com atividades práticas realizadas durante o bootcamp da [Generati
 
 ## 🧠 Conteúdo
 
-As atividades estão organizadas por módulos numerados, cobrindo desde conceitos básicos até estruturas mais avançadas como listas FIFO e LIFO.
+As atividades estão organizadas por módulos numerados
 
 | Pasta                        | Descrição                                            | Linguagem     |
 |------------------------------|------------------------------------------------------|---------------|
