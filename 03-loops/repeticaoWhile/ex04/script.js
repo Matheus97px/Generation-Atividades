@@ -4,10 +4,10 @@
 const readLine = require("readline-sync");
 
 //declaraçao  das variaveis atribuidos valor 0 para serem do tipo number
-let pessoasBackend = 0, frontMulher = 0, frontHomem = 0, naoBinarioFull = 0, totalPesquisa = 0, contador = 0;
+let pessoasBackend = 0, frontMulher = 0, mobileHomem40Mais = 0, naoBinarioFull = 0, totalPesquisa = 0, contador = 0;
 
 //declaração e atribuição de valor para dar inicio ao loop
-let continuar = 's'
+let continuar = 's';
 
 
 while (continuar === 's') {
@@ -39,7 +39,7 @@ Pessoa Desenvolvedora (1-4)
     4 - FullStack
         `);
     //solicita novamente pessoa desenvolvedora enquanto loop for valido
-    let pessoaDev = readLine.questionInt(`Escolha sua identidade de genero: `);
+    let pessoaDev = readLine.questionInt(`Escolha sua área de atuação como desenvolvedor(a): `);
     //limpa o terminal
     console.clear();
 
@@ -57,8 +57,8 @@ Pessoa Desenvolvedora (1-4)
         pessoasBackend++;
     } else if (pessoaDev === 2 && (identidadeGenero === 1 || identidadeGenero === 4)) {
         frontMulher++;
-    } else if (pessoaDev === 2 && idade > 40 && (identidadeGenero === 2 || identidadeGenero === 5)) {
-        frontHomem++;
+    } else if (pessoaDev === 3 && idade > 40 && (identidadeGenero === 2 || identidadeGenero === 5)) {
+        mobileHomem40Mais++;
     } else if (identidadeGenero === 3 && pessoaDev === 4 && idade < 30) {
         naoBinarioFull++;
     }
@@ -72,13 +72,13 @@ Pessoa Desenvolvedora (1-4)
 const media = contador / totalPesquisa;
 
 //limpa o terminal
-console.clear()
+console.clear();
 
 //exibi na tela o  resultado da pesquisa
 console.log(`
     Total de pessoas desenvolvedoras Backend: ${pessoasBackend}
     Total de Mulheres Cis e Trans desenvolvedoras Frontend: ${frontMulher}
-    Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: ${frontHomem}
+    Total de Homens Cis e Trans desenvolvedores Mobile maiores de 40 anos: ${mobileHomem40Mais}
     Total de Pessoas Não Binárias desenvolvedoras FullStack menores de 30 anos: ${naoBinarioFull}
     O número total de pessoas que responderam à pesquisa: ${totalPesquisa}
     A média de idade das pessoas que responderam à pesquisa: ${media.toFixed(2)}

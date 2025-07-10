@@ -27,4 +27,4 @@ do{
 //limpa o terminal
 console.clear();
 //exibi a soma dos numeros positivos no terminal
-console.log(`A soma dos numeros positivos é: ${soma}`);
+console.log(soma > 0 ? `A soma dos numeros positivos é: ${soma}` : `Nenhum número positivo foi digitado.`);

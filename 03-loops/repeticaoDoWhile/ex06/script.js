@@ -25,9 +25,9 @@ do{
 }while(numeroEscolhido !== 0);
 
 //variavel recebe o calculo da media 
-const media = soma / contador
+const media = soma / contador;
 
 //limpa o terminal
 console.clear();
 //exibi a soma dos numeros positivos no terminal
-console.log(`A média de todos os números múltiplos de 3 é: ${media.toFixed(2)}`);
+console.log(contador > 0 ? `A média de todos os números múltiplos de 3 é: ${media.toFixed(2)}`: `Nenhum número múltiplo de 3 foi digitado. Não é possível calcular a média.`);
